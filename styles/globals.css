@@ -1,0 +1,290 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+
+:root {
+  --orange: #F36D6A;
+  --lightBlue: rgb(0, 147, 245);
+  --lightGrey: #706f6f;
+}
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Main {
+  margin: 5% 6%;
+}
+
+.Main_div {
+  margin: 10px;
+  max-width: 100%;
+  max-height: auto;
+  text-align: center;
+  border-radius: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(107, 107, 107);
+  padding: 0 !important;
+}
+
+
+.Main_div h3 {
+  margin: 0;
+  line-height: 3rem;
+  font-weight: 400;
+}
+
+.Main_div p {
+  margin: 0;
+  font-size: 12px;
+  color: rgb(135, 138, 141);
+  font-weight: 100;
+  padding: 0 5px;
+}
+
+.categories_heading {
+  text-align: center;
+  font-weight: 600;
+}
+
+.Card_Header {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px 5px 0 0;
+}
+
+.logo {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.Subject_btn {
+  background-color: rgb(0, 153, 255);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  height: 30px;
+  width: 100px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+
+/********
+  TABS 
+********/
+
+.ant-tabs-nav-list {
+  margin: 0 !important;
+  width: 100% !important;
+  background-color: rgb(241, 241, 241);
+  text-align: center;
+}
+
+.ant-tabs-tab {
+  margin: 0 !important;
+  width: 100% !important;
+  font-weight: 600 !important;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  font-weight: 600 !important;
+  color: var(--orange) !important;
+  display: flex !important;
+  justify-content: space-evenly !important;
+
+}
+
+.ant-tabs-ink-bar,
+.ant-tabs-ink-bar-animated {
+  background: var(--orange) !important;
+}
+
+.ant-tabs-tab:hover,
+.ant-tabs-tab-active:hover,
+.ant-tabs-tab-btn:hover {
+  font-weight: 600 !important;
+  color: var(--orange) !important;
+}
+
+.icon {
+  margin-right: 3px;
+  margin-bottom: 2px;
+}
+
+
+/* .seeAllButton {
+  bottom: 0 !important;
+} */
+
+@media only screen and (max-width: 576px) {
+  .icon {
+    display: none;
+  }
+
+  .seeAllButton {
+    position: static !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    margin-top: 10%;
+  }
+}
+
+
+/***************
+  footer 
+***************/
+
+.footer>h3 {
+  color: white;
+}
+
+.useful_links h3,
+.useful_links a {
+  color: white !important;
+}
+
+.useful_links a {
+  font-size: 12px;
+}
+
+.anticon {
+  color: var(--orange);
+  background-color: white;
+  margin-right: 10px;
+}
+
+.anticon:hover {
+  color: white;
+  background-color: var(--orange);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer {
+    padding: 0 40px 40px 40px !important;
+  }
+
+  .footer>.ant-row>.ant-col,
+  .useful_links>.ant-row>.ant-col {
+
+    margin-top: 20px !important;
+  }
+
+  .skills {
+    max-width: 100% !important;
+  }
+}
+
+
+
+/*****************
+  alice carousel
+*****************/
+
+
+
+
+.user_prof {
+  box-shadow: 0px 0px 5px rgb(182, 182, 182);
+  margin: 20px 10px;
+  padding: 20px 10px 10px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  position: absolute;
+  top: 30%;
+  width: auto;
+  font-size: 40px;
+}
+
+.alice-carousel__next-btn {
+  right: 0;
+  text-align: right !important;
+  /* margin-right: -46%;
+  height: 200px; */
+
+}
+
+.alice-carousel__prev-btn {
+  /* margin-left: -45%; */
+  text-align: left !important;
+}
+
+.alice-carousel__prev-btn .alice-carousel__prev-btn-item,
+.alice-carousel__next-btn .alice-carousel__next-btn-item {
+  box-shadow: 0px 0px 0px 0px black, -20px 0px 30px 50px rgba(255, 255, 255, 0.808);
+  background-color: rgba(255, 255, 255, 0.808);
+
+}
+
+.alice-carousel__prev-btn .alice-carousel__prev-btn-wrapper .__inactive,
+.alice-carousel__next-btn .alice-carousel__next-btn-wrapper .__inactive {
+
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 568px) {
+
+  .alice-carousel__prev-btn .alice-carousel__prev-btn-item,
+  .alice-carousel__next-btn .alice-carousel__next-btn-item,
+  .alice-carousel__dots {
+    display: none;
+
+  }
+
+  .carousel_div {
+    padding: 0 !important;
+  }
+
+  .alice-carousel__wrapper {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .carousel-header-line{
+    max-width: 10vw !important;
+  }
+
+  .user_prof {
+    height: 240px !important;
+  }
+
+  .user_name {
+    font-size: 16px !important;
+  }
+
+  .book_now,
+  .price {
+    font-size: 12px !important;
+  }
+
+  .profile_picture>img {
+    width: 60px !important;
+    height: 60px !important;
+    position: relative;
+  }
+
+  .skills>div>p {
+    font-size: 8px !important;
+    border-width: 1px !important;
+    padding: 3px 5px !important;
+
+  }
+}

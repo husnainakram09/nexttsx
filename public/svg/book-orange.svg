@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.995" height="35.494" viewBox="0 0 28.995 35.494">
+  <g id="book" transform="translate(1.5 1.5)">
+    <path id="Path" d="M0,4.062A4.062,4.062,0,0,1,4.062,0H25.995" transform="translate(0 24.37)" fill="none" stroke="#f36d6a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path-2" data-name="Path" d="M4.062,0H25.995V32.493H4.062A4.062,4.062,0,0,1,0,28.432V4.062A4.062,4.062,0,0,1,4.062,0Z" fill="none" stroke="#f36d6a" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+</svg>
