@@ -4,6 +4,8 @@ import Image from "next/image";
 import CategoryHeading from '../Cards/University/Category';
 import SeeAll from '../Button/SeeAll';
 import { UsersCarousel } from '../Cards';
+import CourseCarousel from '../Cards/Courses';
+import WorkshopCarousel from '../Cards/Workshop';
 type nav ={
     tab: string,
     key: string,
@@ -51,8 +53,9 @@ const Tab: React.FC<PropsType> = (props) => {
             </Tabs>
             <SeeAll />
             <div>
-
-            <UsersCarousel />
+            <UsersCarousel  />
+            <CourseCarousel />
+            <WorkshopCarousel />
             </div>
         </div>
     )

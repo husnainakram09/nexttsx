@@ -1,0 +1,42 @@
+export const CourseData = [
+  {
+    name: "Python for beginners",
+    picture: "/img/python.png",
+    description:"lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed",
+    price:350,
+    ratings: 4.8,
+    reviews: 200,
+  },
+  {
+    name: "Python for beginners",
+    picture: "/img/python.png",
+    description:"lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed",
+    price:350,
+    ratings: 4.8,
+    reviews: 200,
+  },
+  {
+    name: "Python for beginners",
+    picture: "/img/python.png",
+    description:"lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed",
+    price:350,
+    ratings: 4.8,
+    reviews: 200,
+  },
+  {
+    name: "Python for beginners",
+    picture: "/img/python.png",
+    description:"lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed",
+    price:350,
+    ratings: 4.8,
+    reviews: 200,
+  },
+  {
+    name: "Python for beginners",
+    picture: "/img/python.png",
+    description:"lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed",
+    price:350,
+    ratings: 4.8,
+    reviews: 200,
+  },
+];

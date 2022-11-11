@@ -1,8 +1,7 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
 
-
 :root {
-  --orange: #F36D6A;
+  --orange: #f36d6a;
   --lightBlue: rgb(0, 147, 245);
   --lightGrey: #706f6f;
 }
@@ -27,7 +26,6 @@
   box-shadow: 0px 0px 5px rgb(107, 107, 107);
   padding: 0 !important;
 }
-
 
 .Main_div h3 {
   margin: 0;
@@ -78,7 +76,6 @@
   cursor: pointer;
 }
 
-
 /********
   TABS 
 ********/
@@ -101,7 +98,6 @@
   color: var(--orange) !important;
   display: flex !important;
   justify-content: space-evenly !important;
-
 }
 
 .ant-tabs-ink-bar,
@@ -121,7 +117,6 @@
   margin-bottom: 2px;
 }
 
-
 /* .seeAllButton {
   bottom: 0 !important;
 } */
@@ -139,12 +134,11 @@
   }
 }
 
-
 /***************
   footer 
 ***************/
 
-.footer>h3 {
+.footer > h3 {
   color: white;
 }
 
@@ -174,9 +168,8 @@
     padding: 0 40px 40px 40px !important;
   }
 
-  .footer>.ant-row>.ant-col,
-  .useful_links>.ant-row>.ant-col {
-
+  .footer > .ant-row > .ant-col,
+  .useful_links > .ant-row > .ant-col {
     margin-top: 20px !important;
   }
 
@@ -185,20 +178,15 @@
   }
 }
 
-
-
 /*****************
   alice carousel
 *****************/
 
-
-
-
 .user_prof {
   box-shadow: 0px 0px 5px rgb(182, 182, 182);
   margin: 20px 10px;
-  padding: 20px 10px 10px;
-  height: 300px;
+  padding: 20px 10px 30px 10px !important;
+  height: max-content;
   border-radius: 5px;
 }
 
@@ -215,7 +203,6 @@
   text-align: right !important;
   /* margin-right: -46%;
   height: 200px; */
-
 }
 
 .alice-carousel__prev-btn {
@@ -225,26 +212,21 @@
 
 .alice-carousel__prev-btn .alice-carousel__prev-btn-item,
 .alice-carousel__next-btn .alice-carousel__next-btn-item {
-  box-shadow: 0px 0px 0px 0px black, -20px 0px 30px 50px rgba(255, 255, 255, 0.808);
+  box-shadow: 0px 0px 0px 0px black,
+    -20px 0px 30px 50px rgba(255, 255, 255, 0.808);
   background-color: rgba(255, 255, 255, 0.808);
-
 }
 
 .alice-carousel__prev-btn .alice-carousel__prev-btn-wrapper .__inactive,
 .alice-carousel__next-btn .alice-carousel__next-btn-wrapper .__inactive {
-
   display: none;
 }
 
-
-
 @media only screen and (max-width: 568px) {
-
   .alice-carousel__prev-btn .alice-carousel__prev-btn-item,
   .alice-carousel__next-btn .alice-carousel__next-btn-item,
   .alice-carousel__dots {
     display: none;
-
   }
 
   .carousel_div {
@@ -257,17 +239,29 @@
   }
 }
 
+.course_name {
+  line-height: 32px !important;
+
+}
 @media only screen and (max-width: 420px) {
-  .carousel-header-line{
-    max-width: 10vw !important;
+  .carousel-header-line {
+    max-width: 5vw !important;
   }
 
-  .user_prof {
+  /* .user_prof {
     height: 240px !important;
   }
+  .course_div{
+    height: 0 !important;
+    height: 260px !important;
+  } */
 
   .user_name {
     font-size: 16px !important;
+  }
+  .course_name {
+    font-size: 14px !important;
+
   }
 
   .book_now,
@@ -275,16 +269,29 @@
     font-size: 12px !important;
   }
 
-  .profile_picture>img {
+  .profile_picture > img {
     width: 60px !important;
     height: 60px !important;
     position: relative;
   }
 
-  .skills>div>p {
+  .skills > div > p {
     font-size: 8px !important;
     border-width: 1px !important;
     padding: 3px 5px !important;
-
+  }
+  .workshop_address,
+  .workshop_calender,
+  .course_description {
+    font-size: 12px !important;
+    line-height: 16px !important;
   }
 }
+
+/* course carousel */
+/* .course_div {
+  padding: 0;
+  padding: 10px;
+  height: 0;
+  height: 270px;
+} */

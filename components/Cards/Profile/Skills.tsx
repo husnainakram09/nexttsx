@@ -22,8 +22,8 @@ const Skills: React.FC<PropsType> = (props) => {
             {
                 props.skill.map((val, ind) => {
                     return (
-                        <div >
-                            <p style={styles} key={ind}>
+                        <div key={ind}>
+                            <p style={styles} >
                                 {val}
                             </p>
                         </div>

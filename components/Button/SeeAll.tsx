@@ -11,7 +11,7 @@ const innerDiv: React.CSSProperties = {
     textAlign: 'center',
     backgroundColor: 'rgb(255,255,255,0.95)',
     fontWeight: '600',
-    boxShadow: '0px 0px 300px 200px white',
+    boxShadow: '0px -100px 100px 40px white',
     // marginBottom: '-10% !important'
 }
 
