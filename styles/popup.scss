@@ -1,0 +1,35 @@
+.ant-modal-title{
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.ant-modal-body {
+    h3{
+        font-weight: 600;
+    }
+    .ant-table-thead tr th{
+        font-weight: 600;
+    }
+  .header {
+    display: flex;
+    justify-content: space-between !important ;
+    div{
+        margin: 0;
+
+    }
+  }
+  .btn_div {
+    position: relative;
+    margin-top: 20px;
+    height: 20px;
+    button {
+      position: absolute;
+      right: 0;
+      background-color: transparent;
+      border: 2px solid rgb(0, 255, 98);
+      border-radius: 5px;
+    }
+  }
+}
+.ant-modal-footer {
+  display: none;
+}

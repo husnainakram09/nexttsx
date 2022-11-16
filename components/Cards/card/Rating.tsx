@@ -10,7 +10,7 @@ const Rating: React.FC<PropsType> = ({rating,review}) => {
     return (
         <div>
             <div className='rating_div'>
-                <StarFilled style={{color:'var(--orange)'}}/>
+                <StarFilled style={{backgroundColor:'transparent'}}/>
                 <span style={{fontSize:'14px', color:'var(--orange)', marginLeft:'-7px'}}>{rating}</span>
                 <span style={{fontSize:'10px', marginLeft:'3px', }}>&#40;{review}&#41;	</span>
             </div>

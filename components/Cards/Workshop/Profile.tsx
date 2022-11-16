@@ -1,9 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
-import Prices from './Prices'
-import BlueTick from './../../../public/svg/check.png'
-import Details from './Details'
+import Price from '../Pricing/Price'
 import { CalendarOutlined, ClockCircleOutlined, PushpinOutlined } from '@ant-design/icons'
+import CardsBtn from '../../Button/CardsBtn'
 
 // type skillSet = [
 //     string
@@ -48,8 +47,9 @@ const Profile: React.FC<PropsType> = ({ WorkshopInfo }) => {
                 <p className='workshop_calender'><CalendarOutlined style={{margin:'0'}}/> {dateTime} <ClockCircleOutlined style={{margin:'0'}}/> {hours}</p>
             </div>
             <div>
-                <Prices price={price} />
-                <Details />
+                <Price prices={price} />
+                {/* <Details handleClick={()=>alert('hello')}/> */}
+                <CardsBtn name='Details' />
             </div>
 
         </div>

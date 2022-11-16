@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
-import BookNow from './BookNow'
 import LastSeen from './LastSeen'
-import Price from './Price'
+import Price from '../Pricing/Price'
 import Rating from './Rating'
 import Sessions from './Sessions'
 import Skills from './Skills'
 import BlueTick from './../../../public/svg/check.png'
+import CardsBtn from '../../Button/CardsBtn'
 
 // type skillSet = [
 //     string
@@ -20,6 +20,8 @@ interface PropsType {
         sessions: number,
         ratings: number,
         reviews: number,
+        price: number,
+        time: number | string
         skills:Array<string>
     }
 
@@ -28,7 +30,7 @@ interface PropsType {
 
 
 const Profile: React.FC<PropsType> = ({ userInfo }) => {
-    const { name, picture, sessions, ratings, reviews,skills } = userInfo;
+    const { name, picture, sessions, ratings, reviews,price,time,skills } = userInfo;
     return (
         <div style={{ textAlign: 'center' }}>
             <div 
@@ -51,8 +53,9 @@ const Profile: React.FC<PropsType> = ({ userInfo }) => {
                 <Skills skill={skills} />
             </div>
             <div>
-                <Price />
-                <BookNow/>
+                <Price prices={price} times={time}/>
+                {/* <BookNow/> */}
+                <CardsBtn name='Book Now'/>
             </div>
 
         </div>

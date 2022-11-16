@@ -152,7 +152,7 @@
 }
 
 .anticon {
-  color: var(--orange);
+  /* color: var(--orange); */
   background-color: white;
   margin-right: 10px;
 }
@@ -264,7 +264,7 @@
 
   }
 
-  .book_now,
+  .cards_btn,
   .price {
     font-size: 12px !important;
   }

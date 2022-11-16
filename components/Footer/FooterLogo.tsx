@@ -1,5 +1,5 @@
 
-import { Col } from 'antd'
+// import { Col } from 'antd'
 import React from 'react'
 
 interface PropsType { }

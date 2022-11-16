@@ -1,6 +1,10 @@
+
 import React from 'react'
 
-interface PropsType { }
+interface PropsType { 
+    handleClick?:React.MouseEventHandler<HTMLButtonElement>,
+    name:string
+}
 const styles: React.CSSProperties = {
     backgroundColor: 'transparent',
     color: 'var(--lightBlue)',
@@ -10,12 +14,12 @@ const styles: React.CSSProperties = {
     float: 'right',
     cursor:'pointer'
 }
-const Details: React.FC<PropsType> = () => {
+const CardsBtn: React.FC<PropsType> = ({handleClick, name}) => {
     return (
         <div>
-            <button style={styles} className='book_now'>Details</button>
+            <button style={styles} className='cards_btn' onClick={handleClick}>{name}</button>
         </div>
     )
 }
 
-export default Details  
+export default CardsBtn  
